@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.container {
+    width: 1000px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.168);
+}
+
+.btn {
+    width: 400px;
+    height: 75px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, #861a54, #00a7cf, #efe348);
+    background-size: 200%;
+    background-position: 0 0;
+    animation: gradients infinite 5s;
+}
+
+@keyframes gradients {
+    0%   {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100%  {background-position: 0 0;}
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+    height: 90px;
+}
